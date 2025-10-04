@@ -15,19 +15,25 @@ To write and execute an Assembly language program for finding the square of a gi
 4. The output square value is stored in Port 2 (P2).
 
 ## PROGRAM
-```
+ORG 00H 
 
+MOV R0,#50H 
 
+MOV A,@R0 
 
+MOV B,A 
 
+MUL AB 
 
+INC R0 
 
+MOV @R0,A 
 
-
-
-```
+END
 
 ## OUTPUT
+![WhatsApp Image 2025-10-04 at 10 24 47_c314fd24](https://github.com/user-attachments/assets/951f7ed0-b59a-4ac6-809a-dffa796f340b)
+
 
 
 ## RESULT
@@ -49,19 +55,23 @@ To write and execute an Assembly language program for finding the cube of a give
 4. The output cube value is stored in a memory location.
 
 ## PROGRAM
-```
-
-
-
-
-
-
-
-
-```
+ORG 00H
+ MOV R0,#50H
+ MOV A,@R0
+ MOV B,A
+ MUL AB
+ MOV B,@R0
+ MUL AB
+ INC R0
+ MOV @R0,A
+ INC R0
+ MOV @R0,A
+ END
 
 
 ## OUTPUT
+![WhatsApp Image 2025-10-04 at 10 28 10_6c32954e](https://github.com/user-attachments/assets/aa478baa-ad28-4e5d-b608-1618ff200d05)
+
 
 ## RESULT
 Thus, the cube of the given data is calculated using 8051 Keil.
